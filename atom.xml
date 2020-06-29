@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://staceypy.github.io</id>
+    <title>Gridea</title>
+    <updated>2020-06-29T13:56:17.470Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://staceypy.github.io"/>
+    <link rel="self" href="https://staceypy.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://staceypy.github.io/images/avatar.png</logo>
+    <icon>https://staceypy.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[CSS]]></title>
+        <id>https://staceypy.github.io/post/css/</id>
+        <link href="https://staceypy.github.io/post/css/">
+        </link>
+        <updated>2020-06-27T08:31:40.000Z</updated>
+        <content type="html"><![CDATA[<h1>CSS 规则由两个主要的部分构成：选择器，以及一条或多条声明:</h1>
+选择器通常是您需要改变样式的 HTML 元素。
+每条声明由一个属性和一个值组成。
+属性（property）是您希望设置的样式属性（style attribute）。每个属性有一个值。属性和值被冒号分开。
+CSS声明总是以分号(;)结束，声明组以大括号({})括起来:
+p 
+{ 
+color:red; 
+text-align:center; 
+}
+<h1>id 选择器</h1>
+id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。
+HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 "#" 来定义。
+以下的样式规则应用于元素属性 id="para1":
+实例 
+#para1
+{
+text-align:center;
+color:red;
+} 
+<h1>class 选择器</h1>
+class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用 
+class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点"."号显示：
+在以下的例子中，所有拥有 center 类的 HTML 元素均为居中。
+实例 
+.center {text-align:center;} ]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Html]]></title>
+        <id>https://staceypy.github.io/post/html/</id>
+        <link href="https://staceypy.github.io/post/html/">
+        </link>
+        <updated>2020-06-25T07:28:30.000Z</updated>
+        <content type="html"><![CDATA[<!DOCTYPE HTML>
+<html>
+<body style="background-color:PowderBlue;">
+<h1 style="text-align:center">My First Html</h1>
+<p style="font-size:30px">hello, world! This text is 30 pixels high</p>
+<a href="http://www.w3school.com.cn/html/"></a>
+<h2>Chapter 1 超链接</h2>
+<a href="http://www.w3school.com.cn/" target="_blank">Visit W3School!</a>
+<p>如果把链接的 target 属性设置为 "_blank"，该链接会在新窗口中打开。plus: a means anchor</p>
+<p>当使用命名锚（named anchors）时，我们可以创建直接跳至该命名锚（比如页面中某个小节）的链接，这样使用者就无需不停地滚动页面来寻找他们需要的信息了。</p>
+<a name="label">锚（显示在页面上的文本）</a>
+首先，我们在 HTML 文档中对锚进行命名（创建一个书签）：
+<a name="tips">基本的注意事项 - 有用的提示</a>
+<p>然后，我们在同一个文档中创建指向该锚的链接：
+<a href="#tips">有用的提示</a>
+您也可以在其他页面中创建指向该锚的链接：
+<a href="http://www.w3school.com.cn/html/html_links.asp#tips">有用的提示</a>
+在上面的代码中，我们将 # 符号和锚名称添加到 URL 的末端，就可以直接链接到 tips 这个命名锚了。</p>
+<!--This is a link-->
+<hr /> <!--水平线-->
+<img src="w3school.jpg" width="200" height="80"  alt=" Nothing Here"/>
+<h2>Goal: a chic websitw</h2>
+<p style="font-family:times;color:LightCoral">are we to speak, first day of week.<br />so can we pretend, sweetly before the mystery ends. </p>
+<a href="https://www.w3school.com.cn/html/html_entities.asp"><b>链接：小于号 等符号</b></a>
+<p><a href="https://www.w3school.com.cn/tags/html_ref_colornames.asp"> <b>链接：颜色</b></a></p>
+<h2>Chapter 2 格式化</h2>
+<p>
+<b>This text is bold</b>
+<br />
+<strong>This text is strong</strong>
+<br />
+<big>This text is big</big>
+<br />
+<em>This text is emphasized</em>
+<br />
+<i>This text is italic</i>
+<br />
+<small>This text is small</small>
+<br />
+This text contains <sub>subscript</sub>
+<br />
+This text contains <sup>superscript</sup>
+</p>
+<p>
+预格式文本保留了空格和换行，很适合显示计算机代码。
+<pre>
+for i = 1 to 10
+     print i
+next i
+</pre>
+</p>
+这是一个无序列表
+<ul>
+<li>鼠标指向 etc 时, 会显示<em>etcetera</em><br/>
+<abbr title="etcetera">etc.</abbr></li>
+<li>The <dfn title="World Health Organization">WHO</dfn> was founded in 1948. </li> 
+<li>定义首字母缩写<br />
+<acronym title="World Wide Web">WWW</acronym></li>
+</ul>
+<p>
+这是长的引用：
+<blockquote>
+   John Wayne Gacy, Jr. Quiet hands, quiet kiss on the mouth. And in my best behavior, I am really just like him. Look beneath the floorboards, for the secrets I <del>didn't</del> <ins>have</ins> hid.
+</blockquote>
+这是短的引用：
+<q>
+我讨厌江的原因
+</q>
+</p>
+<h2>Chapter 3 计算机代码</h2>
+<p>
+Keyboard: <kbd>File | Open...</kbd><br/>
+编程代码示例: (不保留多余的空格和折行, 如需保留code里头套pre)<br/>
+<code>
+<pre>
+var person = {
+    firstName:"Bill",
+    lastName:"Gates",
+    age:50,
+    eyeColor:"blue"
+}
+</pre>
+</code>
+</p>
+<p style="font-size:16px"><var>E</var> = <var>m</var> <var>c</var><sup>2</sup></p>
+<h2>Chapter 4 图像</h2>
+<img src="url" />
+注释: src is abbr for source
+替换文本属性（Alt）
+alt 属性用来为图像定义一串预备的可替换的文本。替换文本属性的值是用户定义的。
+<img src="boat.gif" alt="Big Boat">
+在浏览器无法载入图像时，替换文本属性告诉读者她们失去的信息。此时，浏览器将显示这个替代性的文本而不是图像。为页面上的图像都加上替换文本属性是个好习惯，这样有助于更好的显示信息，并且对于那些使用纯文本浏览器的人来说是非常有用的。
+<hr />
+<h2>Chapter 5 表格</h2>
+<table border="1">
+<caption>TB开销</caption>
+<tr>
+<th>物品</th>
+<th>价格</th>
+</tr>
+<tr>
+<td>颜料</td>
+<td>￥50</td>
+</tr>
+<tr>
+<td>空气凤梨</td>
+<td>￥30</td>
+</tr>
+<tr>
+<td>台灯</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<h2>Chapter 6 列表</h2>
+<h3>一个定义列表：</h3>
+<dl>
+   <dt>计算机</dt>
+   <dd>用来计算的仪器 ... ...</dd>
+   <dt>显示器</dt>
+   <dd>以视觉方式显示信息的装置 ... ...</dd>
+</dl>
+<h3>一个嵌套列表：</h3>
+<ul>
+  <li>咖啡</li>
+  <li>茶
+    <ul>
+    <li>红茶</li>
+    <li>绿茶</li>
+    </ul>
+  </li>
+  <li>牛奶</li>
+</ul>
+<h2>Chapter 7 class 类</h2>
+<h3>分类块级元素 div </h3>
+<p>div 元素是块级元素。它能够用作其他 HTML 元素的容器。
+设置 div 元素的类，使我们能够为相同的 div 元素设置相同的类：</p>
+<code>
+<pre>
+<head>
+<style>
+.cities {
+    background-color:black;
+    color:white;
+    margin:20px;
+    padding:20px;
+} 
+</style>
+</head>
+<body>
+<div class="cities">
+<h2>London</h2>
+<p>London is the capital city of England. 
+It is the most populous city in the United Kingdom, 
+with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+<div class="cities">
+<h2>Paris</h2>
+<p>Paris is the capital and most populous city of France.</p>
+</div>
+</body>
+</pre>
+</code>
+<h3>分类行内元素 span </h3>
+span 能够用作文本的容器。设置 span 元素的类，能够为相同的 span 元素设置相同的样式。
+<pre>
+<head>
+<style>
+  span.red {color:red;}
+</style>
+</head>
+<body>
+<p>My <span class="red">Important</span> Heading</p>
+</body>
+</pre>
+<h2>Chapter 8 Form 表单</h2>
+<h3>input 元素:<h3>
+<ol>
+<li>text: 常规文本输入</li>
+<li>radio: 单选按钮输入</li> 
+<li>submit: 提交按钮</li>
+<li>用 fieldset 组合表单数据
+<ul>
+<li>
+<form action="action_page.php">
+<fieldset>
+<legend>Personal information:</legend>
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit"></fieldset>
+</form> 
+</li>
+</ul>
+</li>
+<li> select 元素（下拉列表): </li>
+<ul>
+<li><pre><select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+</select></pre></li>
+<li><p>列表通常会把首个选项显示为被选选项。您能够通过添加 selected 属性来定义预定义选项。</p>
+<p>option value="fiat" selected</p></li>
+</ul>
+<li> button 元素定义可点击的按钮: <br/>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button></li>
+<li><a href="https://www.w3school.com.cn/html/html_form_input_types.asp"><em>更多type和限制参数详见此网站</em></a></li>
+<li><a href="https://www.w3school.com.cn/html/html_form_attributes.asp"><em>更多Input 属性详见此网站</em></a></li>
+</ol>
+</body>
+</html>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[今天收藏的网页]]></title>
+        <id>https://staceypy.github.io/post/jin-tian-shou-cang-de-wang-ye/</id>
+        <link href="https://staceypy.github.io/post/jin-tian-shou-cang-de-wang-ye/">
+        </link>
+        <updated>2020-06-24T10:47:53.000Z</updated>
+        <content type="html"><![CDATA[<p>https://github.com/programthink/sites  -- 各色网站</p>
+<MySQL>
+https://www.cnblogs.com/kismetv/p/10331633.html 
+<p>https://www.cnblogs.com/yank/p/3673450.html  -- 查询题</p>
+<NetBeans>
+https://www.cnblogs.com/php521/p/5867506.html
+<V2Ray>
+https://iyideng.me/black-technology/cgfw/best-free-v2ray-node-website-subscribing.html 
+                                                     -- 一灯不是和尚
+<p>#表情<br>
+https://www.webfx.com/tools/emoji-cheat-sheet/</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://staceypy.github.io/post/hello-gridea/</id>
+        <link href="https://staceypy.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>

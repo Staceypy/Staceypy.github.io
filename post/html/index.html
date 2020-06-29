@@ -1,0 +1,388 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Html | Gridea</title>
+<link rel="shortcut icon" href="https://staceypy.github.io/favicon.ico?v=1593413988463">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://staceypy.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Html | Gridea - Atom Feed" href="https://staceypy.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+
+
+My First Html
+hello, world! This text is 30 pixels high
+
+Chapter 1 超链接
+Visit W3School!
+如果把链接的 target 属性设置为 "_blank"，该..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://staceypy.github.io">
+  <img class="avatar" src="https://staceypy.github.io/images/avatar.png?v=1593413988463" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Html
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-06-25
+              </span>
+              <span>
+                5 min read
+              </span>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://staceypy.github.io/post-images/html.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <!DOCTYPE HTML>
+<html>
+<body style="background-color:PowderBlue;">
+<h1 style="text-align:center">My First Html</h1>
+<p style="font-size:30px">hello, world! This text is 30 pixels high</p>
+<a href="http://www.w3school.com.cn/html/"></a>
+<h2>Chapter 1 超链接</h2>
+<a href="http://www.w3school.com.cn/" target="_blank">Visit W3School!</a>
+<p>如果把链接的 target 属性设置为 "_blank"，该链接会在新窗口中打开。plus: a means anchor</p>
+<p>当使用命名锚（named anchors）时，我们可以创建直接跳至该命名锚（比如页面中某个小节）的链接，这样使用者就无需不停地滚动页面来寻找他们需要的信息了。</p>
+<a name="label">锚（显示在页面上的文本）</a>
+首先，我们在 HTML 文档中对锚进行命名（创建一个书签）：
+<a name="tips">基本的注意事项 - 有用的提示</a>
+<p>然后，我们在同一个文档中创建指向该锚的链接：
+<a href="#tips">有用的提示</a>
+您也可以在其他页面中创建指向该锚的链接：
+<a href="http://www.w3school.com.cn/html/html_links.asp#tips">有用的提示</a>
+在上面的代码中，我们将 # 符号和锚名称添加到 URL 的末端，就可以直接链接到 tips 这个命名锚了。</p>
+<!--This is a link-->
+<hr /> <!--水平线-->
+<img src="w3school.jpg" width="200" height="80"  alt=" Nothing Here"/>
+<h2>Goal: a chic websitw</h2>
+<p style="font-family:times;color:LightCoral">are we to speak, first day of week.<br />so can we pretend, sweetly before the mystery ends. </p>
+<a href="https://www.w3school.com.cn/html/html_entities.asp"><b>链接：小于号 等符号</b></a>
+<p><a href="https://www.w3school.com.cn/tags/html_ref_colornames.asp"> <b>链接：颜色</b></a></p>
+<h2>Chapter 2 格式化</h2>
+<p>
+<b>This text is bold</b>
+<br />
+<strong>This text is strong</strong>
+<br />
+<big>This text is big</big>
+<br />
+<em>This text is emphasized</em>
+<br />
+<i>This text is italic</i>
+<br />
+<small>This text is small</small>
+<br />
+This text contains <sub>subscript</sub>
+<br />
+This text contains <sup>superscript</sup>
+</p>
+<p>
+预格式文本保留了空格和换行，很适合显示计算机代码。
+<pre>
+for i = 1 to 10
+     print i
+next i
+</pre>
+</p>
+这是一个无序列表
+<ul>
+<li>鼠标指向 etc 时, 会显示<em>etcetera</em><br/>
+<abbr title="etcetera">etc.</abbr></li>
+<li>The <dfn title="World Health Organization">WHO</dfn> was founded in 1948. </li> 
+<li>定义首字母缩写<br />
+<acronym title="World Wide Web">WWW</acronym></li>
+</ul>
+<p>
+这是长的引用：
+<blockquote>
+   John Wayne Gacy, Jr. Quiet hands, quiet kiss on the mouth. And in my best behavior, I am really just like him. Look beneath the floorboards, for the secrets I <del>didn't</del> <ins>have</ins> hid.
+</blockquote>
+这是短的引用：
+<q>
+我讨厌江的原因
+</q>
+</p>
+<h2>Chapter 3 计算机代码</h2>
+<p>
+Keyboard: <kbd>File | Open...</kbd><br/>
+编程代码示例: (不保留多余的空格和折行, 如需保留code里头套pre)<br/>
+<code>
+<pre>
+var person = {
+    firstName:"Bill",
+    lastName:"Gates",
+    age:50,
+    eyeColor:"blue"
+}
+</pre>
+</code>
+</p>
+<p style="font-size:16px"><var>E</var> = <var>m</var> <var>c</var><sup>2</sup></p>
+<h2>Chapter 4 图像</h2>
+<img src="url" />
+注释: src is abbr for source
+替换文本属性（Alt）
+alt 属性用来为图像定义一串预备的可替换的文本。替换文本属性的值是用户定义的。
+<img src="boat.gif" alt="Big Boat">
+在浏览器无法载入图像时，替换文本属性告诉读者她们失去的信息。此时，浏览器将显示这个替代性的文本而不是图像。为页面上的图像都加上替换文本属性是个好习惯，这样有助于更好的显示信息，并且对于那些使用纯文本浏览器的人来说是非常有用的。
+<hr />
+<h2>Chapter 5 表格</h2>
+<table border="1">
+<caption>TB开销</caption>
+<tr>
+<th>物品</th>
+<th>价格</th>
+</tr>
+<tr>
+<td>颜料</td>
+<td>￥50</td>
+</tr>
+<tr>
+<td>空气凤梨</td>
+<td>￥30</td>
+</tr>
+<tr>
+<td>台灯</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<h2>Chapter 6 列表</h2>
+<h3>一个定义列表：</h3>
+<dl>
+   <dt>计算机</dt>
+   <dd>用来计算的仪器 ... ...</dd>
+   <dt>显示器</dt>
+   <dd>以视觉方式显示信息的装置 ... ...</dd>
+</dl>
+<h3>一个嵌套列表：</h3>
+<ul>
+  <li>咖啡</li>
+  <li>茶
+    <ul>
+    <li>红茶</li>
+    <li>绿茶</li>
+    </ul>
+  </li>
+  <li>牛奶</li>
+</ul>
+<h2>Chapter 7 class 类</h2>
+<h3>分类块级元素 div </h3>
+<p>div 元素是块级元素。它能够用作其他 HTML 元素的容器。
+设置 div 元素的类，使我们能够为相同的 div 元素设置相同的类：</p>
+<code>
+<pre>
+<head>
+<style>
+.cities {
+    background-color:black;
+    color:white;
+    margin:20px;
+    padding:20px;
+} 
+</style>
+</head>
+<body>
+<div class="cities">
+<h2>London</h2>
+<p>London is the capital city of England. 
+It is the most populous city in the United Kingdom, 
+with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+<div class="cities">
+<h2>Paris</h2>
+<p>Paris is the capital and most populous city of France.</p>
+</div>
+</body>
+</pre>
+</code>
+<h3>分类行内元素 span </h3>
+span 能够用作文本的容器。设置 span 元素的类，能够为相同的 span 元素设置相同的样式。
+<pre>
+<head>
+<style>
+  span.red {color:red;}
+</style>
+</head>
+<body>
+<p>My <span class="red">Important</span> Heading</p>
+</body>
+</pre>
+<h2>Chapter 8 Form 表单</h2>
+<h3>input 元素:<h3>
+<ol>
+<li>text: 常规文本输入</li>
+<li>radio: 单选按钮输入</li> 
+<li>submit: 提交按钮</li>
+<li>用 fieldset 组合表单数据
+<ul>
+<li>
+<form action="action_page.php">
+<fieldset>
+<legend>Personal information:</legend>
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit"></fieldset>
+</form> 
+</li>
+</ul>
+</li>
+<li> select 元素（下拉列表): </li>
+<ul>
+<li><pre><select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+</select></pre></li>
+<li><p>列表通常会把首个选项显示为被选选项。您能够通过添加 selected 属性来定义预定义选项。</p>
+<p>option value="fiat" selected</p></li>
+</ul>
+<li> button 元素定义可点击的按钮: <br/>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button></li>
+<li><a href="https://www.w3school.com.cn/html/html_form_input_types.asp"><em>更多type和限制参数详见此网站</em></a></li>
+<li><a href="https://www.w3school.com.cn/html/html_form_attributes.asp"><em>更多Input 属性详见此网站</em></a></li>
+</ol>
+</body>
+</html>
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://staceypy.github.io/post/jin-tian-shou-cang-de-wang-ye/">
+              <h3 class="post-title">
+                今天收藏的网页
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://staceypy.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
