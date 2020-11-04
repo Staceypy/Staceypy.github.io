@@ -2,14 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://staceypy.github.io</id>
     <title>Gridea</title>
-    <updated>2020-09-16T07:11:46.935Z</updated>
+    <updated>2020-11-04T08:34:53.156Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://staceypy.github.io"/>
     <link rel="self" href="https://staceypy.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>Raise your right hand, tell me you want me in your life</subtitle>
     <logo>https://staceypy.github.io/images/avatar.png</logo>
     <icon>https://staceypy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[Anxiety Disorder]]></title>
+        <id>https://staceypy.github.io/post/anxiety-disorder/</id>
+        <link href="https://staceypy.github.io/post/anxiety-disorder/">
+        </link>
+        <updated>2020-10-11T08:09:22.000Z</updated>
+        <content type="html"><![CDATA[<p>这是记录我的身体和思维成长和变化的日记，加油🤠<br>
+治愈的本质是成长，而非回到过去的状态。我需要成长，我需要长大。<br>
+10月11日<br>
+交到了新朋友，广西的妹子，梁睿思，二次元元气少女<br>
+学会：每天早上吃两片艾司，一天都不能停<br>
+想要做的：健身，雅思，冥想。 《精神焦虑的自救》，《正念禅修》,《正念禅修，在喧嚣世界中获取安宁》<br>
+10月13日<br>
+每天都好长的感觉，可能是一件好事。对学习上的事还是好焦虑，有人在旁边根本就学不进去，下午超级困，晕乎乎的。记得提醒自己：学明白一个新东西并记住是很难，很费时间的。学一天觉得自己啥也没学是自我否定。只有学过了这痛苦无成果的一天，之后才能参透运用。别总是想着要放弃！大学第一要紧的事就是学习，学习，学习！下午晚上觉得因为没有好好学习焦虑时，告诉自己你已经尽力了，你本来就不擅长这个，犒劳一下自己，你值得美好的生活。把专业知识充满脑袋，没事时也琢磨琢磨，别老想着甜茶了。晚上骑了一个小时的动感单车，酸爽！<br>
+11月3日<br>
+已经不会出现惊恐发作了，感觉和平时没什么两样，每天吊儿郎当的。哈哈，但也有进步：每周至少锻炼3次，和朋友一起自习，过了个有趣又宅宅的万圣节。今天看中了好多漂亮的衣服，都要至少两百多，没钱了😢。以后买衣服要买能穿好几年的，别买淘宝货了。为了穿衣服好看，我要变瘦，变瘦，瘦腿，瘦背，瘦下巴！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[CSS]]></title>
         <id>https://staceypy.github.io/post/css/</id>
