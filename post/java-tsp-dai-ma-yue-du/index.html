@@ -2,19 +2,25 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>今天收藏的网页 | Gridea</title>
+<title>Java TSP代码阅读 | Gridea</title>
 <link rel="shortcut icon" href="https://staceypy.github.io/favicon.ico?v=1606100314128">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://staceypy.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="今天收藏的网页 | Gridea - Atom Feed" href="https://staceypy.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="Java TSP代码阅读 | Gridea - Atom Feed" href="https://staceypy.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="https://github.com/programthink/sites  -- 各色网站
+    <meta name="description" content="
+用Matrix要import java.util.Hashmap
 
-https://www.cnblogs.com/kismetv/p/10331633.html 
-https://www.cnblogs.com..." />
+
+public class City {
+    public int city;
+    public double x;
+    public double y;
+
+..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -77,32 +83,106 @@ https://www.cnblogs.com..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              今天收藏的网页
+              Java TSP代码阅读
             </h2>
             <div class="post-info">
               <span>
-                2020-06-24
+                2020-11-10
               </span>
               <span>
-                1 min read
+                3 min read
               </span>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>https://github.com/programthink/sites  -- 各色网站</p>
-<MySQL>
-https://www.cnblogs.com/kismetv/p/10331633.html 
-<p>https://www.cnblogs.com/yank/p/3673450.html  -- 查询题</p>
-<NetBeans>
-https://www.cnblogs.com/php521/p/5867506.html
-<V2Ray>
-https://iyideng.me/black-technology/cgfw/best-free-v2ray-node-website-subscribing.html 
-                                                     -- 一灯不是和尚
-<p>#表情<br>
-https://www.webfx.com/tools/emoji-cheat-sheet/</p>
+                <ol>
+<li>用Matrix要import java.util.Hashmap</li>
+</ol>
+<pre>
+public class City {
+    public int city;
+    public double x;
+    public double y;
 
+    public static double[][] distances;
+    /*
+        Students can choose to store the distance matrix to somewhere to speed up the program
+     */
+    public double distance(City b) {
+        return distances[this.city][b.city];
+    }
+}
+......
+ City.distances = new double[cities.size()][cities.size()];
+        for (int i = 0; i < cities.size(); i++) {
+            City ci = cities.get(i);
+            for (int j = i; j < cities.size(); j++) {
+                City cj = cities.get(j);
+                City.distances[i][j] = City.distances[j][i] = Math.sqrt(Math.pow((ci.x - cj.x),2) + Math.pow((ci.y - cj.y),2));
+            }
+        }
+        return cities;
+    }
+</pre>
+<ol start="2">
+<li>正则split(&quot;\s+&quot;)<br>
+(1). String[] blocks = line.trim().split(&quot;\s+&quot;);<br>
+\s+：一个或多个空格，包括tab<br>
+(2). split(&quot; +&quot;) 按空格进行拆分，只能是单个空格</li>
+</ol>
+<pre>
+String[] blocks = line.trim().split("\\s+");
+                if (blocks.length == 3) {
+                    City c = new City();
+                    c.city = Integer.parseInt(blocks[0]);
+                    c.x = Double.parseDouble(blocks[1]);
+                    c.y = Double.parseDouble(blocks[2]);
+                    //System.out.printf("City %s %f %f\n", c.city, c.x, c.y);
+                    cities.add(c);
+</pre>
+<ol start="3">
+<li>遍历citiesToVisit直到citiesToVisit为空，找到最近的city，把它从citiesToVisit中删除，加到routine中，最后返回routine。</li>
+</ol>
+<pre>
+public static ArrayList<City> solveProblem(ArrayList<City> citiesToVisit) {
+        ArrayList<City> routine = new ArrayList<City>();
+        City start = null;
+        City current = null;
+        // get city 0;
+        for (int i = 0; i < citiesToVisit.size(); i++) {
+            if (citiesToVisit.get(i).city == 0) {
+                start = current = citiesToVisit.remove(i);
+                routine.add(current);
+                break;
+            }
+        }
+        if (current == null) {
+            System.out.println("Your problem instance is incorrect! Exiting...");
+            System.exit(0);
+        }
+        // visit cities
+        while (!citiesToVisit.isEmpty()) {
+            double minDist = Double.MAX_VALUE;
+            int index = -1;
+            for (int i = 0; i < citiesToVisit.size(); i++) {
+                double distI = current.distance(citiesToVisit.get(i));
+                // index == -1 is needed in case the distance is really Double.MAX_VALUE.
+                if (index == -1 || distI < minDist) {
+                    index = i;
+                    minDist = distI;
+                }
+            }
+            //int index = 0;
+
+            current = citiesToVisit.remove(index);
+            routine.add(current);
+        }
+        routine.add(start); // go back to 0
+        return routine;
+    }
+</pre>
               </div>
               <div class="toc-container">
                 
@@ -114,9 +194,9 @@ https://www.webfx.com/tools/emoji-cheat-sheet/</p>
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://staceypy.github.io/post/hello-gridea/">
+            <a href="https://staceypy.github.io/post/anxiety-disorder/">
               <h3 class="post-title">
-                Hello Gridea
+                Anxiety Disorder
               </h3>
             </a>
           </div>
