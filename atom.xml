@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://staceypy.github.io</id>
     <title>Gridea</title>
-    <updated>2020-11-23T02:58:37.834Z</updated>
+    <updated>2020-11-23T04:30:12.584Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://staceypy.github.io"/>
     <link rel="self" href="https://staceypy.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://staceypy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
-        <title type="html"><![CDATA[面试went]]></title>
+        <title type="html"><![CDATA[Q&A]]></title>
         <id>https://staceypy.github.io/post/mian-shi-went/</id>
         <link href="https://staceypy.github.io/post/mian-shi-went/">
         </link>
