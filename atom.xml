@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://staceypy.github.io</id>
+    <title>Portfolio</title>
+    <updated>2025-02-09T20:45:52.375Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://staceypy.github.io"/>
+    <link rel="self" href="https://staceypy.github.io/atom.xml"/>
+    <subtitle>Raise your right hand, tell me you want me in your life</subtitle>
+    <logo>https://staceypy.github.io/images/avatar.png</logo>
+    <icon>https://staceypy.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, Portfolio</rights>
+    <entry>
+        <title type="html"><![CDATA[About me]]></title>
+        <id>https://staceypy.github.io/post/about-me/</id>
+        <link href="https://staceypy.github.io/post/about-me/">
+        </link>
+        <updated>2025-02-09T13:44:02.000Z</updated>
+        <content type="html"><![CDATA[<p>who i am</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AI chatbot]]></title>
+        <id>https://staceypy.github.io/post/ai-chatbot/</id>
+        <link href="https://staceypy.github.io/post/ai-chatbot/">
+        </link>
+        <updated>2025-02-09T13:38:46.000Z</updated>
+        <content type="html"><![CDATA[<p>Builtwith Langchain and Streamlit</p>
+]]></content>
+    </entry>
+</feed>
